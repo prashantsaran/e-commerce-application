@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center selllerRow">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+            <div class="card">
+                <div class="card-body">
+
+                    <h3 class="signUpHeading">Add Product</h3>
+                    <form #addproduct="ngForm" (ngSubmit)="addProducts(addproduct.value)">
+                        <h6 class="signUpHeading">{{addProductSuccessfully}}</h6>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Name</label> -->
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="name"
+                                ngModel placeholder="Enter Product Name">  
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Email address</label> -->
+                            <input type="text" class="form-control" id="price" aria-describedby="price"
+                                name="price" ngModel placeholder="Enter Product Price">
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input type="text" class="form-control" id="color" placeholder="Enter Product color"
+                                name="color" ngModel>
+                        </div>
+                        
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input type="text" class="form-control" id="category" placeholder="Enter Product Category"
+                                name="category" ngModel>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input type="text" class="form-control" id="description" placeholder="Enter Product Description"
+                                name="description" ngModel>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1">Password</label> -->
+                            <input type="text" class="form-control" id="image" placeholder="Enter Product Url"
+                                name="image" ngModel>
+                        </div>
+
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
